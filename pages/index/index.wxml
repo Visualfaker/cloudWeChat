@@ -17,6 +17,15 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{ndicatorColor}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color="{{indicatorActiveColor}}"
+    duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
     <text class="user-msg">{{msg}}</text>
