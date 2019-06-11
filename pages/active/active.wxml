@@ -1,0 +1,5 @@
+<!--pages/acitve/acitve.wxml-->
+<view bindtap='callPhone' class='callPhone'>
+  <text>拨打电话</text>
+  <text class='phone'>13644810431</text>
+</view>

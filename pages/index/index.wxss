@@ -19,3 +19,14 @@
 .usermotto {
   margin-top: 200px;
 }
+.user-motto {
+  color: red;
+  font-size: 24px;
+}
+.user-msg {
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 18px;
+  color: steelblue;
+}

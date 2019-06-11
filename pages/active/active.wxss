@@ -1,0 +1,10 @@
+/* pages/acitve/acitve.wxss */
+.callPhone{
+  text-align: center;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+}
+.phone{
+  color: greenyellow;
+}
