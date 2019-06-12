@@ -6,10 +6,13 @@
     "pages/user/user"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#2e5e86",
-    "navigationBarTitleText": "微信小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
