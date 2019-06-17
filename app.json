@@ -9,8 +9,8 @@
     "navigationBarBackgroundColor": "#2e5e86",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom",
-    "backgroundColor": "#fff",
+    "navigationStyle": "default",
+    "backgroundColor": "#d80000",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true
   },

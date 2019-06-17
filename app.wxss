@@ -3,19 +3,16 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   box-sizing: border-box;
 } 
 .userinfo {
+  width: 200rpx;
   display: flex;
-  align-items: left;
-  align-self: left;
-  margin-top: 75rpx;
   border-radius: 50rpx;
   border: 1rpx solid #aaa;
   padding:5rpx 15rpx 6rpx 8rpx;
   box-sizing: border-box;
+  display: none;
 }
 
 .userinfo-avatar {

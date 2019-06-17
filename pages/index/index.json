@@ -1,4 +1,7 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "21天养成计划",
+  "usingComponents": {
+    "v-like": "/components/like/index"
+  }
 }

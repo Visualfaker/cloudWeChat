@@ -30,4 +30,39 @@
     <text class="user-motto">{{motto}}</text>
     <text class="user-msg">{{msg}}</text>
   </view>
+  <view class='userCard'>
+    <view class='userCardBox'>
+      <view class='userCardBoxLeft'>
+        <text>平安云官网</text>
+        <text>吴兵兵</text>
+        <text>营销管理总监</text>
+      </view>
+      <view class='userCardBoxRight'>
+        <image class='userImg' src='{{userInfo.avatarUrl}}'/>
+      </view>
+    </view>
+    <view class='userCardBottom'>
+      <view>
+        <text>icon</text>
+        <text>13848203322</text>
+      </view>
+      <view>
+        <text>icon1</text>
+        <text>wubingbing@pinganyun.com.cn</text>
+      </view>
+      <view>
+        <text>icon2</text>
+        <text>一剑扶摇三万尺</text>
+      </view>
+    </view>
+  </view>
+  <view class='navBox'>
+    <view class='navBoxLeft' bindtap='shareCard'> 
+      分享名片
+    </view>
+    <view class='navBoxRight' bindtap='addPhoneContact'>
+      存入手机通讯录
+    </view>
+  </view>
+  <v-like></v-like>
 </view>

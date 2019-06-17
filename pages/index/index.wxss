@@ -1,6 +1,5 @@
 /**index.wxss**/
 swiper {
-  margin-top: 30rpx;
   width: 100%;
 }
 .slide-image{
@@ -12,6 +11,8 @@ swiper {
   margin-top: 20rpx;
 }
 .user-motto {
+  display: block;
+  text-align: center;
   color: red;
   font-size: 24px;
 }
@@ -21,4 +22,99 @@ swiper {
   margin-top: 10rpx;
   font-size: 18px;
   color: steelblue;
+}
+.userCard {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  box-shadow: 0 4rpx 10rpx skyblue;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 30rpx;
+  padding-top: 40rpx; 
+}
+.userCardBox {
+  display: flex;
+}
+.userCardBoxLeft {
+  flex: 1;
+  overflow: hidden;
+  margin-left: 10rpx;
+}
+.userCardBoxLeft text {
+  display: block;
+}
+.userCardBoxLeft text:nth-child(1) {
+  font-size: 10px;
+}
+.userCardBoxLeft text:nth-child(2) {
+  font-size: 18px;
+  margin-top: 20rpx;
+}
+.userCardBoxLeft text:nth-child(3) {
+  font-size: 10px;
+}
+.userCardBoxRight {
+  width: 150rpx;
+  height: 150rpx;
+  overflow: hidden;
+  margin-right: 10rpx;
+}
+.userCardBoxRight .userImg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  border-radius: 50%;
+}
+.userCardBottom {
+  margin-top: 20rpx;
+
+}
+.userCardBottom view {
+  display: flex;
+  justify-content: flex-start;
+}
+.userCardBottom view text {
+  font-size: 12px;
+}
+.userCardBottom view text:nth-child(1) {
+  flex: 1;
+}
+.userCardBottom view text:nth-child(2) {
+  flex: 7;
+  color: yellowgreen;
+}
+.navBox {
+  display: flex;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  justify-content: space-around;
+}
+.navBoxLeft {
+  flex: 1;
+  border: 1px solid green;
+  text-align: center;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: inherit;
+}
+.navBoxRight {
+  flex: 1;
+  border-radius: 3px;
+  color: #fff;
+  background-color: green;
+  border: 1px solid green;
+  padding-bottom: 15rpx;
+  text-align: center;padding-top: 15rpx;
+  margin-left: 30rpx;
+  font-size: 16px;
+
 }

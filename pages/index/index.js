@@ -22,6 +22,47 @@ Page({
     indicatorActiveColor: "red"
   },
   //事件处理函数
+  shareCard() {
+    wx.showShareMenu({
+      withShareTicket: true,
+      success: res => {
+        console.log("[success]=",res);
+      },
+      fail: err => {
+        console.log("[err]=",err);
+      }
+    })
+  },
+  addPhoneContact() {
+    wx.addPhoneContact({
+      firstName: '吴兵兵',
+      mobilePhoneNumber: '13848203322',
+      organization: '平安云官网',
+      title: '营销管理总监',
+      nickName: '冰冰',
+      lastName: '污',
+      remark: '销售',
+      weChatNumber: '13848203322',
+      addressCountry: '中国',
+      addressState: '广东省',
+      addressCity: '深圳市',
+      addressStreet: '益田区',
+      addressPostalCode: '110120130',
+      url: 'http://yun.pingan.com',
+      success: res => {
+        console.log(res);
+      },
+      fail: error => {
+        console.log(error);
+        wx.showToast({
+          title: '联系人添加成功',
+        });
+        wx.showToast({
+          title: '联系人添加失败，请稍候重试',
+        });
+      }
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
