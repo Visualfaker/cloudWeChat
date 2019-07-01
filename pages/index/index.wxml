@@ -64,5 +64,9 @@
       存入手机通讯录
     </view>
   </view>
-  <v-like></v-like>
+  <b-like />
+  <b-webView />
+  <view class='wrapper'>
+    <button class='wepay' bindtap='goYun'>点击跳转</button>
+  </view>
 </view>

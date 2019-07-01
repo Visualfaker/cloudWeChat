@@ -21,6 +21,24 @@ Page({
     duration: 500,
     indicatorActiveColor: "red"
   },
+  
+    goYun(){
+      wx.navigateTo({
+        url: '/components/webView/index', //
+        success: function (res) {
+          console.log('[success]=',res);
+        },       //成功后的回调；
+        fail: function (e) {
+          console.log('[err]=',e);
+        },         //失败后的回调；
+        // complete: function () { 
+        //   wx.showToast({
+        //     title: '回到了首页'
+        //   })
+        // } 
+      })
+    }
+  ,
   //事件处理函数
   shareCard() {
     wx.showShareMenu({
@@ -51,12 +69,12 @@ Page({
       url: 'http://yun.pingan.com',
       success: res => {
         console.log(res);
-      },
-      fail: error => {
-        console.log(error);
         wx.showToast({
           title: '联系人添加成功',
         });
+      },
+      fail: error => {
+        console.log(error);
         wx.showToast({
           title: '联系人添加失败，请稍候重试',
         });

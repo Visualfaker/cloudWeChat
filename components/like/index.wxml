@@ -1,2 +1,4 @@
 <!--components/like/index.wxml-->
-<text>like</text>
+<text id="againBuy" name="againBuy" class="againBuy" bindtap="againBuy">又买</text>
+<text id="refund" name="refund" class="refund" bindtap="refund">退货</text>
+<view>我有{{ like ? count : '0'}}个壶</view>

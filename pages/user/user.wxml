@@ -9,7 +9,7 @@
     </button>
     <block wx:else>
       <image 
-        bindtap="bindViewTap" 
+        bindtap="bindViewTap"
         class="userinfo-avatar" 
         src="{{userInfo.avatarUrl}}" 
         mode="cover">

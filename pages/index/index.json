@@ -1,7 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "21天养成计划",
+  "navigationBarTitleText": "产品",
   "usingComponents": {
-    "v-like": "/components/like/index"
+    "b-like": "/components/like/index",
+    "b-webview": "/components/webView/index"
   }
 }
