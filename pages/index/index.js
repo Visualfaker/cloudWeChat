@@ -55,7 +55,7 @@ Page({
     wx.addPhoneContact({
       firstName: '吴兵兵',
       mobilePhoneNumber: '13848203322',
-      organization: '平安云官网',
+      organization: 'yununyunyun',
       title: '营销管理总监',
       nickName: '冰冰',
       lastName: '污',
