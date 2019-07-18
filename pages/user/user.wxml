@@ -1,20 +1,23 @@
-<!--pages/user/user.wxml-->
-<view class='container'>
-  <view class="userinfo">
-    <button 
-      wx:if="{{!hasUserInfo && canIUse}}" 
-      open-type="getUserInfo"                     
-      bindgetuserinfo="getUserInfo">
-       获取头像昵称 
-    </button>
-    <block wx:else>
-      <image 
-        bindtap="bindViewTap"
-        class="userinfo-avatar" 
-        src="{{userInfo.avatarUrl}}" 
-        mode="cover">
-      </image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper interval="{{interval}}" previous-margin="120px" next-margin="120px" 
+        display-multiple-items="1" bindchange="dateSwiperChange" current="{{swiperCurrent}}" style='height:156rpx'>
+        <block wx:for="{{dates}}" wx:key="index" wx:for-item="item">
+          <swiper-item>
+            <view class="swiper-item demo-text-3" 
+              style='display:flex;background-color:{{firstIndex?(index==swiperCurrent?"#BFA456":"#1A3B64"):(clickIndex==index?"#BFA456":"#1A3B64")}} ;color: {{firstIndex?(index==swiperCurrent?"#FFFFFF":"#92ACC8"):(clickIndex==index?"#FFFFFF":"#92ACC8")}};'
+              bindtap='clickDate' id="{{index}}">
+              <text style='font-size:24rpx;margin-top:-40rpx'>
+              {{item.year}}年
+            </text>
+              <text style='font-size:32rpx;font-weight:bold;margin-top:-40rpx'>
+              {{item.month}}月
+            </text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
   </view>
 </view>

@@ -1,8 +1,108 @@
-.log-list {
+.header{
+  display: flex;
+  background-color: rgba(219, 219, 221, 0.884);
+  align-items: center;
+  height: 60rpx;
+}
+.active{
+  color: red;
+}
+.header .headerClass{
+  color: red;
+  margin-left: 20rpx;
+}
+.header .headerClass,
+.header .headerPin{
+  font-size: 28rpx;
+}
+.search{
+  display: flex;
+  height: 46rpx;
+  border-radius: 20rpx;
+  margin-left: 30rpx;
+  background-color:white;
+  width: 70%;
+}
+.search text{
+  color: gainsboro;
+  font-family: monospace;
+  font-size: 30rpx;
+  line-height: 46rpx;
+    
+}
+.search image{
+  padding-left:50rpx; 
+  width: 46rpx;
+  height: 46rpx;
+}
+.main{
+  display: flex;
+}
+.left{
+  width: 25%
+}
+.left view{
+  padding-top: 30rpx;
+  text-align: center;
+}
+.right{
+  width: 75%;  
+}
+ 
+.listItem2{
+  display: flex;
+}
+.listItem .img{
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.listItem .img image{
+  width: 80%;
+  height: 80%
+}
+.itemTitle{
+  font-size: 32rpx;
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+  color:gray;
+}
+.listItem .listText{
   display: flex;
   flex-direction: column;
-  padding: 40rpx;
+  margin-top: 6rpx;
 }
-.log-item {
-  margin: 10rpx;
+.listItem .listText view{
+  display: flex;
+  align-items: flex-end;
+}
+.listItem .listText text{
+  font-size: 34rpx;
+  margin-top: 10rpx;
+}
+.listItem .listText .money{
+  color: red;
+}
+.listItem .listText view text{
+  font-size: 28rpx;
+  color :silver;
+  margin-right: 60rpx;
+}
+.listItem .listText view button{
+  background-color: red;
+  color: white;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 0px;
+}
+::-webkit-scrollbar
+{
+width: 6px;
+height: 6px;
+background-color: #ffffff;
+} 
+::-webkit-scrollbar-track{
+  height: 20rpx;
+  color: black;
 }

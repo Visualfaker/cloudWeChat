@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wxf24d6e56401d1f8b",
+	"appid": "wxeed3c1e7dd7dc831",
 	"projectname": "cloudWeChat",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -48,12 +48,20 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "个人",
 					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/logs/logs",
+					"pathName": "pages/logs/logs",
+					"query": "公司",
 					"scene": null
 				}
 			]

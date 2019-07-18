@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container"> 
   <view class="userinfo">
     <button 
       wx:if="{{!hasUserInfo && canIUse}}" 

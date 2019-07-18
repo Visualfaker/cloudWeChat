@@ -1,24 +1,17 @@
-<!--pages/acitve/acitve.wxml-->
-<view class='container'>
-  <view class="userinfo">
-    <button 
-      wx:if="{{!hasUserInfo && canIUse}}" 
-      open-type="getUserInfo"                     
-      bindgetuserinfo="getUserInfo">
-       获取头像昵称 
-    </button>
-    <block wx:else>
-      <image 
-        bindtap="bindViewTap" 
-        class="userinfo-avatar" 
-        src="{{userInfo.avatarUrl}}" 
-        mode="cover">
-      </image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="tab">
+  <scroll-view class="nav" scroll-x="true" scroll-left="{{scrollLeft}}">
+    <block wx:for="{{allTitle}}" wx:for-index="idx" wx:key="idex">
+      <view class="nav-item {{currentIndex==idx ? 'active' : ''}}" data-current="{{idx}}" bindtap="changeTitle">{{item.title}}</view>
     </block>
-  </view>
-  <view bindtap='callPhone' class='callPhone'>
-    <text>拨打电话</text>
-    <text class='phone'>13644810431</text>
-  </view>
+  </scroll-view>
+  <swiper class="content-container" current="{{currentIndex}}" circular="{{false}}" bindchange="changeContent">
+    <swiper-item class="content">客厅</swiper-item>
+    <swiper-item class="content">厨房</swiper-item>
+    <swiper-item class="content">卧室</swiper-item>
+    <swiper-item class="content">KTV</swiper-item>
+    <swiper-item class="content">浴室</swiper-item>
+    <swiper-item class="content">广场</swiper-item>
+    <swiper-item class="content">公园</swiper-item>
+    <swiper-item class="content">博物馆</swiper-item>
+  </swiper>
 </view>

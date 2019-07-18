@@ -1,25 +1,85 @@
-<!--logs.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button 
-      wx:if="{{!hasUserInfo && canIUse}}" 
-      open-type="getUserInfo"                     
-      bindgetuserinfo="getUserInfo">
-       获取头像昵称 
-    </button>
-    <block wx:else>
-      <image 
-        bindtap="bindViewTap" 
-        class="userinfo-avatar" 
-        src="{{userInfo.avatarUrl}}" 
-        mode="cover">
-      </image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='header'>
+
+  <text class='headerClass'>分类</text>
+
+  <text class='headerPin'>/品牌</text>
+
+  <view class="search">
+
+    <image src='/images/搜索.png'></image>
+
+    <text>搜索商品</text>
+
   </view>
-  <view class="container log-list">
-    <block wx:for="{{logs}}" wx:for-item="log" wx:key="{{key}}">
-      <text class="log-item">{{index + 1}}. {{log}}</text>
-    </block>
+
+</view>
+
+<view class='main'>
+
+  <view class='left'>
+
+    <scroll-view scroll-y="true" style="height: 1100rpx" scroll-into-view="true" scroll-with-animation="true">
+
+      <block wx:for="{{leftText}}" wx:for-list="item">
+
+        <view class="{{classfiySelect == item.id?'active':''}}" data-id='{{item.id}}' bindtap='left_list'>
+
+          <text>{{item.text1}}</text>
+
+        </view>
+
+      </block>
+
+    </scroll-view>
+
   </view>
+
+  <view class='right'>
+
+    <scroll-view scroll-y="true" style="height: 1100rpx" bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-into-view="{{'inToview'+rigId}}" scroll-with-animation="true">
+
+      <block wx:for="{{rightData}}" wx:for-list="item">
+
+        <view class='itemTitle' id="{{'inToview'+item.id}}">{{item.title}}</view>
+
+        <view bindtap='particulars' class='listItem' data-id='{{item.id}}'>
+
+          <block wx:for="{{item.frist}}">
+
+            <view class='listItem2' data-text="{{}}">
+
+              <view class='img'>
+
+                <image src='{{item.url}}'></image>
+
+              </view>
+
+              <view class='listText'>
+
+                <text>{{item.text}}</text>
+
+                <text class='money'>¥{{item.money}}</text>
+
+                <view>
+
+                  <text>已售{{item.sum}}</text>
+
+                  <button size='mini' bindtap='particulars'>立即抢购</button>
+
+                </view>
+
+              </view>
+
+            </view>
+
+          </block>
+
+        </view>
+
+      </block>
+
+    </scroll-view>
+
+  </view>
+
 </view>
