@@ -8,11 +8,11 @@ Page({
       { id: 0, title: '客厅' },
       { id: 1, title: '厨房' },
       { id: 2, title: '卧室' },
-      { id: 3, title: 'KTV' },
+      { id: 3, title: 'KTV博物馆博物馆' },
       { id: 4, title: '浴室' },
       { id: 5, title: '广场' },
       { id: 6, title: '公园' },
-      { id: 7, title: '博物馆' }
+      { id: 7, title: '博物馆博物馆博物馆' }
     ],
     currentIndex: 0, //当前选中标题的下标
     scrollLeft: 0, //tab滚动条的位置

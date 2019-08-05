@@ -65,7 +65,6 @@
     </view>
   </view>
   <b-like />
-  <b-webView />
   <view class='wrapper'>
     <button class='wepay' bindtap='goYun'>点击跳转</button>
   </view>

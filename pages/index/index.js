@@ -10,9 +10,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://yun.pingan.com/imgs/products/logo/ecs/YFWQ_cxkj@2x.png?w=640',
       'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+      'http://120.52.79.5:20080/imgs/products/logo/ecs/YYP_qhjys@2x.png?w=640'
     ],
     indicatorDots: true,
     circular: true,

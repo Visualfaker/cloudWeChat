@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "产品",
   "usingComponents": {
-    "b-like": "/components/like/index",
-    "b-webview": "/components/webView/index"
+    "b-like": "/components/like/index"
   }
 }
